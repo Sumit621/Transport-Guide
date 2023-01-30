@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Result</title>
+
+  </head>
+  <body>
+    <style>
+        body {
+            background-image: url('/static/trfOffWhite.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+          .wrapper {
+            text-align: center;
+            margin=15px;
+          }
+
+          .mapView{
+            padding=15px;
+          }
+  
+        @media (min-width: 200px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+  
+      
+      <!-- Custom styles for this template -->
+    </head>
+    <body class="bg-light">
+    
+  <div class="container">
+    <main>
+        <div class="py-4 text-center">
+            <h2>Bus Routes:</h2>
+            <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>
+                    Option No.
+                  </th>
+                  <th>
+                    Route
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for dat in msg %}
+                  {% if forloop.counter|divisibleby:2 %}
+                  <tr class="table-warning">
+                    <td>
+                      <strong>{{forloop.counter}}</strong>
+                    </td>
+                    <td>
+                      <strong>{{dat}}</strong>
+                    </td>
+                  </tr>
+                  {% else %}
+                  <tr class="table-success">
+                    <td>
+                      <strong>{{forloop.counter}}</strong>
+                    </td>
+                    <td>
+                      <strong>{{dat}}</strong>
+                    </td>
+                  </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="py-4 text-center">
+            <h2>CNG Fare:</h2>
+            <p class="lead">{{msg2}}</p>
+          </div>
+      <div class="mapView">
+      <div class="py-1 text-center">
+        <h2>Map:</h2>
+        {{map|safe}}
+      </div>
+      </div>
+      
+  
+            
+        <div class="wrapper">
+            <button class="w-50 btn btn-info btn-lg" type="button" onclick="window.location.href='/index';">Back</button>
+        </div>
+    
+    </main>
+  
+  </div>
+  
+  
+      <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Admin Home Page</title>
+  </head>
+  <body>
+  
+   
+  
+    
+    <style>
+      html,
+      header.page-header {order: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    vertical-align: baseline;
+    }
+    
+    header.page-header > h1 {
+        font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+            fantasy;
+    }
+
+    .navbar {
+      width: auto;
+      float: auto;
+	    margin: auto;
+	    padding: auto;
+	    background-color: #0A1C46;
+	    border-bottom: 1px solid #ccc;
+    }
+   
+
+body {
+  background-image: url('/static/silverBack.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+body {
+  height: 100%;
+}
+
+body {
+  display: block;
+  align-items: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  background-color: white;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  x-index: 2;
+}
+
+
+.form-signin input[type="text"] {
+  margin-bottom: 12px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin button {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+    </style>
+        
+
+    
+    <!-- Custom styles for this template -->
+
+  </head>
+
+  <body class="text-center">
+    <div class="navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="/adminIndex" class="navbar-brand">Admin Page</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="/DataBusRoutes" class="nav-link">Bus Stops Table</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/DataPoribohonRoutes" class="nav-link">Poribohon Routes Table</a>
+              </li>
+              <li class="nav-item">
+                <a href="/DataUserPrefs" class="nav-link">User Prefs & History Table</a>
+              </li>
+              <li class="nav-item">
+                <a href="/DataPlaceLocs" class="nav-link">Place Locations Table</a>
+              </li>
+              <li class="nav-item">
+                <a href="/DataHubLocs" class="nav-link">Hub Locations Table</a>
+              </li>
+              <li class="nav-item">
+                <a href="/index" class="nav-link">User Page</a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">Log Out</a>
+              </li>
+          </ul>
+      </div>
+
+  </nav>
+</div>
+    
+<main class="form-signin">
+
+
+  <form class="form-signin">
+    
+    <h1 class="h2 mt-3 mb-3 fw-normal">This is the Admin Home Page</h1>
+    <p class="mb-5">Add, Update or Delete data from all the Databases here</p>
+
+
+   
+    <button class="w-50 btn btn-lg btn-primary" type="button" onclick="window.location.href='/statisticsPage';">Show Statistics</button>
+    <button class="w-50 btn btn-lg btn-primary" type="button" onclick="window.location.href='/logout';">Log out</button>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

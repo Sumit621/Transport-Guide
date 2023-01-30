@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Statistics Page</title>
+
+  </head>
+  <body>
+    <style>
+        body {
+            background-image: url('/static/silverOrg.jpg');
+            background-repeat: no-repeat;
+            padding: 60px;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            
+          }
+          .wrapper {
+            text-align: center;
+          }
+  
+        @media (min-width: 200px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+  
+      
+      <!-- Custom styles for this template -->
+    </head>
+<body class="bg-light text-center" >
+    
+  <div class="container">
+    <main>
+        <div class="py-4 text-center">
+         <h2>App Statistics</h2>
+         <div class="table-responsive">
+           <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                  <th>
+                    
+                  </th>
+                  <th>
+                    
+                  </th> 
+                </tr>
+              </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Searched Normal Route: </strong>{{nRLogs}}</td>
+                    <td><strong>Ratio of Searching Normal Route: </strong>{{nRRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Searched Via Route: </strong>{{vRLogs}}</td>
+                    <td><strong>Ratio of Searching Via Route: </strong>{{vRRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Viewed Nearest Hub: </strong>{{nHLogs}}</td>
+                    <td><strong>Ratio of Viewing Nearest Hub: </strong>{{nHRatio}}</td> 
+                </tr>  
+                <tr>
+                    <td><strong>Viewed History: </strong>{{histLogs}}</td>
+                    <td><strong>Ratio of Viewing History: </strong>{{histRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Viewed Poribohon: </strong>{{poriLogs}}</td>
+                    <td><strong>Ratio of Viewing Poribohon: </strong>{{poriRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Viewed Preferences: </strong>{{prefLogs}}</td>
+                    <td><strong>Ratio of Viewing Preferences: </strong>{{prefRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Added Preferences: </strong>{{addPrefLogs}}</td>
+                    <td><strong>Ratio of Adding Preferences: </strong>{{addPrefRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Deleted Preferences: </strong>{{delPrefLogs}}</td>
+                    <td><strong>Ratio of Deleting Preferences: </strong>{{delPrefRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Viewed Bus Reviews: </strong>{{revLogs}}</td>
+                    <td><strong>Ratio of Viewing Bus Reviews: </strong>{{revRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Added Bus Review: </strong>{{addRevLogs}}</td>
+                    <td><strong>Ratio of Adding Bus Review: </strong>{{addRevRatio}}</td> 
+                </tr>
+                <tr>
+                    <td><strong>Deleted Bus Review: </strong>{{delRevLogs}}</td>
+                    <td><strong>Ratio of Deleting Bus Review: </strong>{{delRevRatio}}</td> 
+                </tr>
+            </tbody>  
+            
+        </table>
+        </div>
+      </div>
+      
+  
+  
+            <hr class="my-4">
+            <div class="wrapper">
+            <button class="w-50 mb-3 btn btn-info btn-lg" type="button" onclick="window.location.href='/viewLogs';">View App Logs</button>
+            <button class="w-50 mb-3 btn btn-info btn-lg" type="button" onclick="window.location.href='/viewSignInOut';">View Sign-in/out Logs</button>
+            <button class="w-50 mb-3 btn btn-primary btn-lg" type="button" onclick="window.location.href='/adminIndex';">Back</button>
+            </div>
+    
+    
+    </main>
+  
+  </div>
+
+  
+      <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
